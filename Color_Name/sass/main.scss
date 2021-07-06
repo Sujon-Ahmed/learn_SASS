@@ -1,0 +1,47 @@
+@import "mixin";
+@import "var";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+// 01. Operators    example(font-size: 5rem + 5rem)
+// 02. Variables    example($bg_color: #5f27cd;)
+// 03. Nesting      example(.main_header>h1>h1:hover)
+// 04. Mixin & Include
+// 05. Parameters
+// 06. Partials
+
+.main_header{
+    @include flex_property;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg_color;
+
+    h1{
+        @include common_code(0.5rem, uppercase);
+        &:hover{
+            color: #fa8231;
+        }
+        &::after{
+            content: " :)";
+        }
+    }
+    
+    h3{
+        @include common_code(.1rem, capitalize);
+        &:hover{
+            color: #2d98da;
+        }
+        &::after{
+            content: " Riman";
+        }
+    }
+    
+}
+

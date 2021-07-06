@@ -1,0 +1,12 @@
+@mixin flexProperty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin commonCode ($f_size, $ls, $tt, $clr){
+    font-size: $f_size;
+    letter-spacing: $ls;
+    text-transform: $tt;
+    color: $clr;
+}

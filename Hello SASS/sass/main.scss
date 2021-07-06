@@ -1,0 +1,27 @@
+@import "var";
+@import "mixin";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{font-size: 62.5%;}
+
+.center_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg_color;
+    @include flexProperty;
+    h1{
+        @include commonCode(5rem, 0.5rem, uppercase, #ffffff);
+        &:hover{
+            color: #e74c3c;
+        }
+    }
+    p{
+        @include commonCode(2rem, 0.3rem,capitalize, #ffffff);
+        &:hover{
+            color: #27ae60;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.center_div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #34495e;
+  color: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center_div h1 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.center_div h1:hover {
+  color: #e74c3c;
+}
+
+.center_div p {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+
+.center_div p:hover {
+  color: #27ae60;
+}
+/*# sourceMappingURL=main.css.map */

@@ -10,33 +10,19 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
-
+.container{
+    background: white;
+    width: 30%;
+    border-radius: 10px;
 
     .inner{
-        background: rgb(20, 207, 51);
+        background: rgb(59, 170, 214);
         padding: 1em;
         border-radius: 10px;
-        width: 250px;
-        clip-path: circle(10% at 90% 20%);
+        width: calc(100% - 2em);
+        clip-path: inset(0% 0% 0% 100%);
         transition: all .5s ease-in-out;
         cursor: pointer;
-
-        &:hover{
-            clip-path: circle(75%);
-            background: yellowgreen;
-        }
-
-        span{
-            float: right;
-            position: relative;
-            right: 4%;
-            color: white;
-            transition: color .5s;
-            font-weight: bold;
-        }
-        &:hover span{
-            color: rgba(255, 255, 255, 0);
-        }
 
         h1{
             color: white;
@@ -48,4 +34,10 @@ body{
             font-size: .8rem;
         }
     }
+    &:hover .inner{
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+    
     

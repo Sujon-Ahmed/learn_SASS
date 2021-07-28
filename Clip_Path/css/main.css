@@ -42,6 +42,10 @@ body {
   font-weight: bold;
 }
 
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
 .inner h1 {
   color: white;
   margin: 0;

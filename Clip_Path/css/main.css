@@ -14,37 +14,41 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.container {
-  width: 30%;
-  background: white;
-  border-radius: 10px;
-}
-
-.container .inner {
-  background: cornflowerblue;
+.inner {
+  background: #14cf33;
   padding: 1em;
   border-radius: 10px;
-  width: 100%;
-  -webkit-clip-path: circle(10% at 0% 0%);
-          clip-path: circle(10% at 0% 0%);
-  -webkit-transition: -webkit-clip-path .5s ease-in-out;
-  transition: -webkit-clip-path .5s ease-in-out;
-  transition: clip-path .5s ease-in-out;
-  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
 }
 
-.container .inner h1 {
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: yellowgreen;
+}
+
+.inner span {
+  float: right;
+  position: relative;
+  right: 4%;
+  color: white;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  font-weight: bold;
+}
+
+.inner h1 {
   color: white;
   margin: 0;
 }
 
-.container .inner p {
+.inner p {
   color: white;
   font-size: .8rem;
-}
-
-.container:hover .inner {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
 }
 /*# sourceMappingURL=main.css.map */
